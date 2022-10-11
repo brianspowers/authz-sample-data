@@ -1,0 +1,272 @@
+{
+  "dataset": {
+    "user_data": {
+      "sam": {
+        "allowed_branches": ["001", "002", "003", "004", "005", "006"],
+        "default_branch": "001",
+        "roles": ["SALES1", "VIEWERS-REPORTERS"]
+      },
+      "rob": {
+        "allowed_branches": ["001", "002", "003", "004", "005", "006", "101", "102", "103"],
+        "default_branch": "001",
+        "roles": ["VIEWERS-REPORTERS", "SALES3", "PURCH3"]
+      },
+      "bob": {
+        "allowed_branches": ["001", "002", "003", "004", "005", "006", "101", "102", "103"],
+        "default_branch": "001",
+        "roles": ["VIEWERS-REPORTERS", "SALES-REG"]
+      },
+      "felicia": {
+        "allowed_branches": ["001", "002", "003", "004", "005", "006", "101", "102", "103"],
+        "default_branch": "001",
+        "roles": ["VIEWERS-REPORTERS", "QUOTES1"],
+        "secondary_branches": [
+          {
+            "branch": "003",
+            "level": "1"
+          },
+          {
+            "branch": "004",
+            "level": "1"
+          }
+        ]
+      },
+      "betty": {
+        "allowed_branches": ["001", "002", "003", "004", "005", "006", "101", "102", "103"],
+        "default_branch": "001",
+        "roles": ["VIEWERS-REPORTERS", "AR-SPEC-ALL"]
+      },
+      "tom": {
+        "allowed_branches": ["001", "002", "003", "004", "005", "006", "101", "102", "103"],
+        "default_branch": "001",
+        "roles": ["VIEWERS-REPORTERS", "QUOTES-DIST"],
+        "secondary_branches": [
+          {
+            "branch": "004",
+            "level": "2"
+          }
+        ]
+      }
+    },
+    "org_chart_data": {
+      "XYZ Lumber": {
+        "level": "4",
+        "parent": null
+      },
+      "Lumber Company": {
+        "parent": "XYZ Lumber",
+        "level": "3"
+      },
+      "East": {
+        "parent": "Lumber Company",
+        "level": "2"
+      },
+      "001": {
+        "parent": "East",
+        "level": "1"
+      },
+      "002": {
+        "parent": "East",
+        "level": "1"
+      },
+      "003": {
+        "parent": "East",
+        "level": "1"
+      },
+      "Southeast": {
+        "parent": "Lumber Company",
+        "level": "2"
+      },
+      "004": {
+        "parent": "Southeast",
+        "level": "1"
+      },
+      "005": {
+        "parent": "Southeast",
+        "level": "1"
+      },
+      "006": {
+        "parent": "Southeast",
+        "level": "1"
+      },
+      "Lumber Co of Canada": {
+        "parent": "XYZ Lumber",
+        "level": "3"
+      },
+      "Canada": {
+        "parent": "Lumber Co of Canada",
+        "level": "2"
+      },
+      "101": {
+        "parent": "Canada",
+        "level": "1"
+      },
+      "102": {
+        "parent": "Canada",
+        "level": "1"
+      },
+      "103": {
+        "parent": "Canada",
+        "level": "1"
+      }
+    },
+    "role_data": {
+      "AR-SPEC-ALL": {
+        "CASH_APPLICATION": {
+          "1": "full",
+          "2": "full",
+          "3": "full",
+          "4": "full"
+        },
+        "WRITE_OFF": {
+          "1": "full",
+          "2": "full",
+          "3": "full",
+          "4": "full"
+        },
+        "PAYMENT_BACKOUT": {
+          "1": "full",
+          "2": "full",
+          "3": "full",
+          "4": "full"
+        }
+      },
+      "SALES1": {
+        "SO_ENTRY": {
+          "1": "full",
+          "2": "read_only",
+          "3": "read_only",
+          "4": "read_only"
+        },
+        "CM_ENTRY": {
+          "1": "full",
+          "2": "read_only",
+          "3": "read_only",
+          "4": "read_only"
+        }
+      },
+      "SALES3": {
+        "CM_ENTRY": {
+          "1": "full",
+          "2": "full",
+          "3": "read_only",
+          "4": "read_only"
+        },
+        "SO_ENTRY": {
+          "1": "full",
+          "2": "full",
+          "3": "read_only",
+          "4": "read_only"
+        },
+        "CANCEL_CMS": {
+          "1": "full",
+          "2": null,
+          "3": null,
+          "4": null
+        },
+        "CANCEL_SOS": {
+          "1": "full",
+          "2": null,
+          "3": null,
+          "4": null
+        }
+      },
+      "SALES-REG": {
+        "SO_ENTRY": {
+          "1": "full",
+          "2": "full",
+          "3": "full",
+          "4": "read_only"
+        },
+        "ENTER_PAYMENTS_IN_SO_CM_ENTRY": {
+          "1": "full",
+          "2": null,
+          "3": null,
+          "4": null
+        }
+      },
+      "PURCH3": {
+        "PO_ENTRY": {
+          "1": "full",
+          "2": "full",
+          "3": "read_only",
+          "4": "read_only"
+        }
+      },
+      "PURCH1-INV": {
+        "PRINT_PO_SR": {
+          "1": "full",
+          "2": null,
+          "3": null,
+          "4": null
+        },
+        "PO_ENTRY": {
+          "1": "full",
+          "2": "read_only",
+          "3": "read_only",
+          "4": "read_only"
+        },
+        "INV_ADJUSTMENTS": {
+          "1": "full",
+          "2": null,
+          "3": null,
+          "4": null
+        }
+      },
+      "QUOTES1": {
+        "QUOTE_ENTRY": {
+          "1": "full",
+          "2": "read_only",
+          "3": "read_only",
+          "4": "read_only"
+        },
+        "RELEASE_QUOTE_TO_EXISTING_SO": {
+          "1": "full",
+          "2": null,
+          "3": null,
+          "4": null
+        },
+        "RELEASE_QUOTE_TO_NEW_SO": {
+          "1": "full",
+          "2": null,
+          "3": null,
+          "4": null
+        }
+      },
+      "QUOTES-DIST": {
+        "QUOTE_ENTRY": {
+          "1": "full",
+          "2": "full",
+          "3": "read_only",
+          "4": "read_only"
+        },
+        "RELEASE_QUOTE_TO_EXISTING_SO": {
+          "1": "full",
+          "2": null,
+          "3": null,
+          "4": null
+        },
+        "RELEASE_QUOTE_TO_NEW_SO": {
+          "1": "full",
+          "2": null,
+          "3": null,
+          "4": null
+        }
+      },
+      "VIEWERS-REPORTERS": {
+        "PRINT_ACKNOWLEDGEMENTS": {
+          "1": "full",
+          "2": "full",
+          "3": "full",
+          "4": "full"
+        },
+        "SO_ENTRY": {
+          "1": "read_only",
+          "2": "read_only",
+          "3": "read_only",
+          "4": "read_only"
+        }
+      }
+    }
+  }
+}

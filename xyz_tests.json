@@ -1,0 +1,196 @@
+{
+  "tests": [
+    {
+      "user": "sam",
+      "branch": "001",
+      "securable": "SO_ENTRY",
+      "expected": "full"
+    },
+    {
+      "user": "sam",
+      "branch": "001",
+      "securable": "CM_ENTRY",
+      "expected": "full"
+    },
+    {
+      "user": "sam",
+      "branch": "002",
+      "securable": "SO_ENTRY",
+      "expected": "read_only"
+    },
+    {
+      "user": "sam",
+      "branch": "002",
+      "securable": "CM_ENTRY",
+      "expected": "read_only"
+    },
+    {
+      "user": "sam",
+      "branch": "004",
+      "securable": "SO_ENTRY",
+      "expected": "read_only"
+    },
+    {
+      "user": "sam",
+      "branch": "004",
+      "securable": "CM_ENTRY",
+      "expected": "read_only"
+    },
+    {
+      "user": "sam",
+      "branch": "101",
+      "securable": "SO_ENTRY",
+      "expected": "denied"
+    },
+    {
+      "user": "sam",
+      "branch": "101",
+      "securable": "CM_ENTRY",
+      "expected": "denied"
+    },
+    {
+      "user": "rob",
+      "branch": "001",
+      "securable": "SO_ENTRY",
+      "expected": "full"
+    },
+    {
+      "user": "rob",
+      "branch": "002",
+      "securable": "SO_ENTRY",
+      "expected": "full"
+    },
+    {
+      "user": "rob",
+      "branch": "004",
+      "securable": "SO_ENTRY",
+      "expected": "read_only"
+    },
+    {
+      "user": "rob",
+      "branch": "103",
+      "securable": "SO_ENTRY",
+      "expected": "read_only"
+    },
+    {
+      "user": "bob",
+      "branch": "001",
+      "securable": "ENTER_PAYMENTS_IN_SO_CM_ENTRY",
+      "expected": "granted"
+    },
+    {
+      "user": "bob",
+      "branch": "002",
+      "securable": "ENTER_PAYMENTS_IN_SO_CM_ENTRY",
+      "expected": "denied"
+    },
+    {
+      "user": "bob",
+      "branch": "004",
+      "securable": "ENTER_PAYMENTS_IN_SO_CM_ENTRY",
+      "expected": "denied"
+    },
+    {
+      "user": "bob",
+      "branch": "101",
+      "securable": "ENTER_PAYMENTS_IN_SO_CM_ENTRY",
+      "expected": "denied"
+    },
+    {
+      "user": "bob",
+      "branch": "101",
+      "securable": "SO_ENTRY",
+      "expected": "read_only"
+    },
+    {
+      "user": "felicia",
+      "branch": "001",
+      "securable": "QUOTE_ENTRY",
+      "expected": "full"
+    },
+    {
+      "user": "felicia",
+      "branch": "001",
+      "securable": "RELEASE_QUOTE_TO_EXISTING_SO",
+      "expected": "full"
+    },
+    {
+      "user": "felicia",
+      "branch": "002",
+      "securable": "QUOTE_ENTRY",
+      "expected": "read_only"
+    },
+    {
+      "user": "felicia",
+      "branch": "002",
+      "securable": "RELEASE_QUOTE_TO_EXISTING_SO",
+      "expected": "denied"
+    },
+    {
+      "user": "felicia",
+      "branch": "003",
+      "securable": "QUOTE_ENTRY",
+      "expected": "full"
+    },
+    {
+      "user": "felicia",
+      "branch": "003",
+      "securable": "RELEASE_QUOTE_TO_EXISTING_SO",
+      "expected": "full"
+    },
+    {
+      "user": "felicia",
+      "branch": "004",
+      "securable": "QUOTE_ENTRY",
+      "expected": "full"
+    },
+    {
+      "user": "felicia",
+      "branch": "004",
+      "securable": "RELEASE_QUOTE_TO_EXISTING_SO",
+      "expected": "full"
+    },
+    {
+      "user": "felicia",
+      "branch": "005",
+      "securable": "QUOTE_ENTRY",
+      "expected": "read_only"
+    },
+    {
+      "user": "felicia",
+      "branch": "005",
+      "securable": "RELEASE_QUOTE_TO_EXISTING_SO",
+      "expected": "denied"
+    },
+    {
+      "user": "felicia",
+      "branch": "101",
+      "securable": "QUOTE_ENTRY",
+      "expected": "read_only"
+    },
+    {
+      "user": "felicia",
+      "branch": "101",
+      "securable": "RELEASE_QUOTE_TO_EXISTING_SO",
+      "expected": "denied"
+    },
+    {
+      "user": "tom",
+      "branch": "004",
+      "securable": "QUOTE_ENTRY",
+      "expected": "full"
+    },
+    {
+      "user": "tom",
+      "branch": "005",
+      "securable": "QUOTE_ENTRY",
+      "expected": "read_only"
+    },
+    {
+      "user": "tom",
+      "branch": "101",
+      "securable": "QUOTE_ENTRY",
+      "expected": "read_only"
+    }
+  ]
+}
