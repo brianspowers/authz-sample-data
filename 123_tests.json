@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "user": "dan",
+      "branch": "NIOBRARA",
+      "securable": "SO_ENTRY",
+      "expected": "full"
+    },
+    {
+      "user": "dan",
+      "branch": "NIOBRARA",
+      "securable": "QUOTE_ENTRY",
+      "expected": "read_only"
+    },
+    {
+      "user": "dan",
+      "branch": "NIOBRARA",
+      "securable": "PRINT_PO_SR",
+      "expected": "denied"
+    },
+    {
+      "user": "dan",
+      "branch": "PONCA",
+      "securable": "SO_ENTRY",
+      "expected": "denied"
+    },
+    {
+      "user": "dan",
+      "branch": "PONCA",
+      "securable": "QUOTE_ENTRY",
+      "expected": "denied"
+    },
+    {
+      "user": "dan",
+      "branch": "PONCA",
+      "securable": "PRINT_PO_SR",
+      "expected": "denied"
+    },
+
+    {
+      "user": "jared",
+      "branch": "PLATTE",
+      "securable": "QUOTE_ENTRY",
+      "expected": "full"
+    },
+    {
+      "user": "jared",
+      "branch": "ELKHORN",
+      "securable": "QUOTE_ENTRY",
+      "expected": "denied"
+    },
+    {
+      "user": "jared",
+      "branch": "WAHOO",
+      "securable": "QUOTE_ENTRY",
+      "expected": "denied"
+    },
+
+    {
+      "user": "kate",
+      "branch": "WAHOO",
+      "securable": "SO_ENTRY",
+      "expected": "full"
+    },
+    {
+      "user": "kate",
+      "branch": "PLATTE",
+      "securable": "SO_ENTRY",
+      "expected": "full"
+    },
+    {
+      "user": "kate",
+      "branch": "PONCA",
+      "securable": "SO_ENTRY",
+      "expected": "full"
+    },
+    {
+      "user": "kate",
+      "branch": "ELKHORN",
+      "securable": "SO_ENTRY",
+      "expected": "denied"
+    }
+  ]
+}

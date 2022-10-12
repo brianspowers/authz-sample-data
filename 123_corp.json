@@ -1,0 +1,103 @@
+{
+  "dataset": {
+    "user_data": {
+      "dan": {
+        "allowed_branches": ["NIOBRARA", "PONCA"],
+        "default_branch": "NIOBRARA",
+        "roles": ["SALES1", "QUOTES-VIEW"]
+      },
+      "kate": {
+        "allowed_branches": [
+          "NIOBRARA",
+          "ELKHORN",
+          "PLATTE",
+          "NEMAHA",
+          "PONCA",
+          "WAHOO"
+        ],
+        "default_branch": "WAHOO",
+        "secondary_branches": [
+          {
+            "branch": "PLATTE",
+            "level": "1"
+          },
+          {
+            "branch": "PONCA",
+            "level": "1"
+          }
+        ],
+        "roles": ["VIEWERS-REPORTERS", "SALES3", "PURCH3"]
+      },
+      "jared": {
+        "allowed_branches": ["ELKHORN", "PLATTE"],
+        "default_branch": "PLATTE",
+        "roles": ["QUOTES1", "QUOTES-VIEW"]
+      },
+      "bruno": {
+        "allowed_branches": [
+          "NIOBRARA",
+          "ELKHORN",
+          "PLATTE",
+          "NEMAHA",
+          "PONCA",
+          "WAHOO"
+        ],
+        "default_branch": "001",
+        "roles": ["VIEWERS-REPORTERS", "QUOTES1"]
+      }
+    },
+    "org_chart_data": {
+      "123 Corporation": {
+        "NIOBRARA": {},
+        "ELKHORN": {},
+        "PLATTE": {},
+        "NEMAHA": {},
+        "PONCA": {},
+        "WAHOO": {}
+      }
+    },
+    "role_data": {
+      "AR-SPEC-ALL": {
+        "CASH_APPLICATION": "full",
+        "WRITE_OFF": "full",
+        "PAYMENT_BACKOUT": "full"
+      },
+      "SALES1": {
+        "SO_ENTRY": "full",
+        "CM_ENTRY": "full"
+      },
+      "SALES3": {
+        "CM_ENTRY": "full",
+        "SO_ENTRY": "full",
+        "CANCEL_CMS": "full",
+        "CANCEL_SOS": "full"
+      },
+      "SALES-REG": {
+        "SO_ENTRY": "full",
+        "ENTER_PAYMENTS_IN_SO_CM_ENTRY": "full"
+      },
+      "PURCH3": {
+        "PO_ENTRY": "full"
+      },
+      "PURCH1-INV": {
+        "PRINT_PO_SR": "full",
+        "PO_ENTRY": "full",
+        "INV_ADJUSTMENTS": "full"
+      },
+      "QUOTES1": {
+        "QUOTE_ENTRY": "full",
+        "RELEASE_QUOTE_TO_EXISTING_SO": "full",
+        "RELEASE_QUOTE_TO_NEW_SO": "full"
+      },
+      "QUOTES-VIEW": {
+        "QUOTE_ENTRY": "read_only",
+        "RELEASE_QUOTE_TO_EXISTING_SO": "read_only",
+        "RELEASE_QUOTE_TO_NEW_SO": "read_only"
+      },
+      "VIEWERS-REPORTERS": {
+        "PRINT_ACKNOWLEDGEMENTS": "full",
+        "SO_ENTRY": "full"
+      }
+    }
+  }
+}
